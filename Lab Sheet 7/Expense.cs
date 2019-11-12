@@ -6,16 +6,43 @@ using System.Threading.Tasks;
 
 namespace Lab_Sheet_7
 {
-     public class Expense
+    public class Expense
     {
-        //Properties
-        public decimal Amount { get; set; }
+        //public decimal Amount { get; set; }
         public DateTime ExpenseDate { get; set; }
         public string Category { get; set; }
 
-        //Construtors
+        private Decimal _amount;
+        public decimal Amount
+        {
+            get { return _amount; }
+            set
+            {
+                TotalExpenses += _amount;
+                _amount = value;
+            }
+        }
 
+        //Constructors - will return later
+        public Expense() : this(0, DateTime.Now, "Unknown")
+        {
+
+        }
+
+        public Expense(decimal amount, DateTime date, string category)
+        {
+            Amount = amount;
+            ExpenseDate = date;
+            Category = category;
+
+
+        }
+
+        public static decimal TotalExpenses;
         //Methods
-
+        public override string ToString()
+        {
+            return $"{Category} {Amount:C} on {ExpenseDate.ToShortDateString()}";
+        }
     }
 }

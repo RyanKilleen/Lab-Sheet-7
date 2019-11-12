@@ -9,8 +9,9 @@
     <Grid Loaded="Grid_Loaded">
         <ListBox x:Name="ibxExpeneses" HorizontalAlignment="Left" Height="298" Margin="75,47,0,0" VerticalAlignment="Top" Width="626"/>
         <Button x:Name="btnadd" Content="Add Expense" HorizontalAlignment="Left" Margin="75,368,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.288,-0.014"/>
-        <Label Content="Total Expense" HorizontalAlignment="Left" Margin="542,362,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="lbx_Expenses" Content="Total Expense" HorizontalAlignment="Left" Margin="495,362,0,0" VerticalAlignment="Top" Width="78"/>
         <TextBlock x:Name="tblkTotal" HorizontalAlignment="Left" Margin="666,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.723,-0.446"/>
+        <TextBlock x:Name="tblk_Total" HorizontalAlignment="Left" Margin="671,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
