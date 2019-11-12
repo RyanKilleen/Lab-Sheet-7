@@ -28,6 +28,7 @@ namespace Lab_Sheet_7
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //Three Expense Objects
+            int number1 = 10;
 
 
 
